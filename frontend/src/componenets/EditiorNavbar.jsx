@@ -59,7 +59,12 @@ const EditorNavbar = ({projectID,htmlCode, cssCode, jsCode}) => {
             </div>
 
             <p>File/ <span className='text-gray-400'>{projectName}</span></p>
+            <div className='flex gap-5'>
             <i onClick={handleDownload} className='p-[8px] bg-black rounded-[5px] cursor-pointer text-[20px]'><FiDownload/></i>
+            <div onClick={()=>navigate("/ai")} className=" cursor-pointer w-8 h-8 bg-white rounded-full flex items-center justify-center mr-2">
+              <span className="text-blue-600 font-bold text-xl">AI</span>
+            </div>
+            </div>
         </div>
     </>
   )

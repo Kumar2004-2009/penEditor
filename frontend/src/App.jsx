@@ -8,6 +8,7 @@ import NoPage from './pages/NoPage'
 import Editior from './pages/Editior'
 import About from './pages/About'
 import Contact from './pages/Contact'
+import AIPage from './pages/AIPage'
 
 const App = () => {
   let isLoggedIn = localStorage.getItem("isLoggedIn");
@@ -22,6 +23,7 @@ const App = () => {
           <Route path='/contact' element={<Contact />} />
           <Route path='/editior/:projectID' element={isLoggedIn ? <Editior /> : <Navigate to="/login"/>} />
           <Route path="*" element={isLoggedIn ? <NoPage />: <Navigate to="/login"/>} />
+          <Route path="/ai" element={<AIPage/>} />
         </Routes></BrowserRouter>
     </>
   )

@@ -138,7 +138,7 @@ const Navbar = ({ isGridLayout, setIsGridLayout }) => {
         </div>
 
         {/* User Controls */}
-        <div className="px-4 py-4 border-t border-gray-800">
+        <div className="px-4 py-4 border-t border-gray-800 flex gap-5">
           <div className="flex items-center justify-between mb-4">
             <button
               onClick={() => setIsGridLayout(!isGridLayout)}
@@ -152,12 +152,6 @@ const Navbar = ({ isGridLayout, setIsGridLayout }) => {
               )}
             </button>
 
-            <button
-              className="p-2 rounded-full text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none"
-              title="Toggle theme"
-            >
-              <MdLightMode className="h-5 w-5" />
-            </button>
           </div>
 
           {/* User dropdown */}
@@ -174,7 +168,7 @@ const Navbar = ({ isGridLayout, setIsGridLayout }) => {
             </button>
 
             {dropdownOpen && (
-              <div className="absolute left-10 bottom-11 right-0 mt-1 py-1 bg-gray-800 rounded-md shadow-lg z-10">
+              <div className="absolute left-5 bottom-14 right-0 mt-1 py-1 bg-gray-800 rounded-md shadow-lg z-10">
                 <button
                   onClick={() => {
                     setDropdownOpen(false);
