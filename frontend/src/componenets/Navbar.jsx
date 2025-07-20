@@ -168,7 +168,7 @@ const Navbar = ({ isGridLayout, setIsGridLayout }) => {
             </button>
 
             {dropdownOpen && (
-              <div className="absolute left-5 bottom-14 right-0 mt-1 py-1 bg-gray-800 rounded-md shadow-lg z-10">
+              <div className="absolute w-32 left-5 bottom-14 right-0 mt-1 py-1 bg-gray-800 rounded-md shadow-lg z-10">
                 <button
                   onClick={() => {
                     setDropdownOpen(false);
